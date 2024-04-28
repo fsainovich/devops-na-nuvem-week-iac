@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "backend" {
-  name                 = "youtube-live/production/backend"
+  name                 = "fsainovich/production/backend"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "backend" {
 }
 
 resource "aws_ecr_repository" "frontend" {
-  name                 = "youtube-live/production/frontend"
+  name                 = "fsainovich/production/frontend"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "eks_cluster_assume_role" {
 }
 
 resource "aws_iam_role" "eks_cluster_role" {
-  name               = "YoutubeLiveEKSClusterRole"
+  name               = "FsainovichEKSClusterRole"
   managed_policy_arns = [ "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy" ]
   assume_role_policy = data.aws_iam_policy_document.eks_cluster_assume_role.json
 }

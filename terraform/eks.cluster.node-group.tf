@@ -1,6 +1,6 @@
 resource "aws_eks_node_group" "this" {
   cluster_name    = aws_eks_cluster.this.name
-  node_group_name = "youtube-live-node-group"
+  node_group_name = "fsainovich-live-node-group"
   node_role_arn   = aws_iam_role.eks_cluster_node_group_role.arn
   subnet_ids      = aws_subnet.privates[*].id
 
