@@ -18,7 +18,7 @@ output "nat_gateway_id" {
   value = aws_nat_gateway.this.id
 }
 
-output "eks_cluster_endpoint" {
-  value = aws_eks_cluster.this.endpoint
-}
+#output "eks_cluster_endpoint" {
+#  value = aws_eks_cluster.this.endpoint
+#}
 
